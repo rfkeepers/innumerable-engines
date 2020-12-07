@@ -4,20 +4,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aweoftheweek.pdf"
   },
   {
-    "revision": "6c0962b7b64df82e37c4",
-    "url": "/css/app.c4617576.css"
+    "revision": "16ad614859737d2d4a26",
+    "url": "/css/app.cfb3e5e3.css"
   },
   {
-    "revision": "33c6ded44d4948e4229384c1dde2e03d",
+    "revision": "18489f9722eacbf8357062556aa61160",
     "url": "/index.html"
   },
   {
-    "revision": "6c0962b7b64df82e37c4",
-    "url": "/js/app.ea9b4d26.js"
+    "revision": "16ad614859737d2d4a26",
+    "url": "/js/app.60d71ff3.js"
   },
   {
-    "revision": "06c1043eae80759569d1",
-    "url": "/js/chunk-vendors.d4014124.js"
+    "revision": "58875a9e23c3b5890aba",
+    "url": "/js/chunk-vendors.b7a5232f.js"
   },
   {
     "revision": "4b1796dfb010a2d880de99d577843bc5",
