@@ -108,7 +108,7 @@ export default navDropdown;
         }
         &__line {
             cursor: pointer;
-            margin: 4px 1.25em 4px 1em;
+            padding: 4px 1.25em 4px 1em;
             z-index: 1;
 
             &:hover {
@@ -116,17 +116,17 @@ export default navDropdown;
             }
 
             @media screen and (max-width: 900px) {
-                margin: 8px;
+                padding: 8px;
             }
 
             @media screen and (min-width: 900px) {
                 &:first-child {
-                    margin-top: 6px;
+                    padding-top: 6px;
                     border-top-left-radius: 0.5em;
                     border-top-right-radius: 0.5em;
                 }
                 &:last-child {
-                    margin-bottom: 6px;
+                    padding-bottom: 6px;
                     border-bottom-left-radius: 0.5em;
                     border-bottom-right-radius: 0.5em;
                 }
