@@ -3,7 +3,7 @@
         <span>Have some feedback about the site or the games?</span>
         <span>Maybe you just want to say "Hello!"?</span>
         <span>&nbsp;</span>
-        <span>Go ahead and tell us what's good at <a href="mailto:keepers@innumerable-engines.net">innumerable.engines@gmail.com</a>.</span>
+        <span>Go ahead and tell us what's good at <a href="mailto:keepers@innumerable-engines.net">keepers@innumerable-engines.net</a>.</span>
     </div>
 </template>
 
