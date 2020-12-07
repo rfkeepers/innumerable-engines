@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.c395274788308cd6fdb9138cbc636fe2.js"
+  "/precache-manifest.44623203e9b9203836833258c4885804.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "deathless_srd"});
+workbox.core.setCacheNameDetails({prefix: "innumerable-engines"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
