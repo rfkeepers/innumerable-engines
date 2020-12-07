@@ -49,6 +49,14 @@ export default {
     this.$router.push('/');
   },
   },
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to) {
+        document.title = `Innumerable Engines - ${to.name}`;
+      },
+    },
+  },
   components: {
     NavDropdown,
   },
