@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/site/Home.vue'
-import Feedback from '@/views/site/Feedback.vue'
-import AWEotW from '@/views/games/AWEotW.vue'
+import home from '@/views/site/Home.vue'
+import feedback from '@/views/site/Feedback.vue'
+import aweotw from '@/views/games/AWEotW.vue'
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/feedback', name: 'Feedback', component: Feedback },
-  { path: '/aweoftheweek', name: 'AWE of the Week', component: AWEotW },
+  { path: '/', name: 'Home', component: home },
+  { path: '/feedback', name: 'Feedback', component: feedback },
+  { path: '/aweoftheweek', name: 'AWE of the Week', component: aweotw },
 ]
 
 const router = createRouter({

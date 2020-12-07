@@ -8,9 +8,7 @@
 </template>
 
 <script>
-
-const aweotw = { name: 'AWEoftheWeek' }
-
+const aweotw = { name: 'AWEoftheWeek' };
 export default aweotw;
 </script>
 
