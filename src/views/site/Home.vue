@@ -3,7 +3,8 @@
     <div class="section">
       <div>This site is still in progress.  You can find the games and supplements I've released below.</div>
       <h1 class="section__title">Altered World Event of the Week</h1>
-      <div>A Monster of the Week derivative aimed at providing players a game environment to match SCP themes and the world of Remedy's 2019 game Control.  View the pdf <a href="./aweoftheweek.pdf" target="_blank">HERE</a>.</div>
+      <div>A Monster of the Week derivative aimed at providing players a game environment to match SCP themes and the world of Remedy's 2019 game Control.</div>
+      <div>View the pdf <a href="./aweoftheweek.pdf" target="_blank">HERE</a>.</div>
     </div>
   </div>
 </template>
