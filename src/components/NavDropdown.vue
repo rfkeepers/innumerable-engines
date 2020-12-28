@@ -51,9 +51,9 @@ const navDropdown = {
             document.addEventListener('click', offclick);
         }
     },
-    routeTo(to) {
+    routeTo(path) {
         this.$emit('routed');
-        this.$router.push(to);
+        this.$router.push(path);
     },
     },
     computed: {

@@ -63,13 +63,13 @@ export default aweotw;
       }
     }
   }
+  
+  &__blurb {
+    text-align: center;
+  }
 
   &__download {
     font-size: 1.5em;
-  }
-
-  &__blurb {
-    text-align: center;
   }
 
   &__changelog {
