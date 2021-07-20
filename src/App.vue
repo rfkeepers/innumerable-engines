@@ -9,7 +9,7 @@
     <div class="shell__links" v-if="linksShowing">
       <NavDropdown
         @routed="hideNavs"
-        name="Games"
+        name="Creations"
         :links="gameLinks"
       ></NavDropdown>
       <div class="shell__links__spacer">|</div>
@@ -19,7 +19,9 @@
       ></NavDropdown>
     </div>
   </div>
-  <router-view class="view"></router-view>
+  <div class="view">
+    <router-view></router-view>
+  </div>
 </div>
 </template>
 
@@ -36,6 +38,7 @@ export default {
     ],
     gameLinks: [
       {to: "/aweoftheweek", text: "AWE of the Week"},
+      {to: "/dwplaybooks", text: "DW Playbooks"},
     ],
   }; },
   created() {},
@@ -146,7 +149,6 @@ export default {
     font-size: 2em;
     cursor: pointer;
     @media screen and (min-width: 900px) {
-      text-indent: 0.5em;
       align-self: end;
     }
   }

@@ -39,25 +39,25 @@ const navDropdown = {
         showDropdown: false,
     }; },
     methods: {
-    toggleDropdown(e) {
-        const offclick = (e2) => {
-            if (e !== e2) {
-                this.showDropdown = !this.showDropdown;
-                document.removeEventListener('click', offclick);
+        toggleDropdown(e) {
+            const offclick = (e2) => {
+                if (e !== e2) {
+                    this.showDropdown = !this.showDropdown;
+                    document.removeEventListener('click', offclick);
+                }
             }
-        }
-        if (!this.showDropdown) {
-            this.showDropdown = !this.showDropdown;
-            document.addEventListener('click', offclick);
-        }
-    },
-    routeTo(path) {
-        this.$emit('routed');
-        this.$router.push(path);
-    },
+            if (!this.showDropdown) {
+                this.showDropdown = !this.showDropdown;
+                document.addEventListener('click', offclick);
+            }
+        },
+        routeTo(path) {
+            this.$emit('routed');
+            this.$router.push(path);
+        },
     },
     computed: {
-    caret() { return this.showDropdown ? faCaretRight : faCaretDown; },
+        caret() { return this.showDropdown ? faCaretRight : faCaretDown; },
     },
     watch: {},
     components: {FontAwesomeIcon},
