@@ -177,5 +177,10 @@ export default {
     margin-left: 15%;
     margin-right: 15%;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 </style>

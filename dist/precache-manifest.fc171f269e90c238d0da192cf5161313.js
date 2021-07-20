@@ -4,16 +4,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aweoftheweek.pdf"
   },
   {
-    "revision": "bb93a93b2d8a2c4ab4a0",
-    "url": "/css/app.46944fff.css"
+    "revision": "d43a05141e765a9eeedd",
+    "url": "/css/app.6bb3af35.css"
   },
   {
-    "revision": "5c91d38fd04ded0cd82f5ccfffa415d3",
+    "revision": "c47557b5309be1fe72216c1e692cc1f5",
     "url": "/index.html"
   },
   {
-    "revision": "bb93a93b2d8a2c4ab4a0",
-    "url": "/js/app.f2de37b2.js"
+    "revision": "d43a05141e765a9eeedd",
+    "url": "/js/app.5195db06.js"
   },
   {
     "revision": "1875a08cf60dcaa2e695",
