@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.29ef27df4184c789766a7e474f96244b.js"
+  "/precache-manifest.1163ca848e93503c7808d2ad327b453d.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "innumerable-engines"});
