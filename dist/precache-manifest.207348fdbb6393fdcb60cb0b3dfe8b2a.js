@@ -4,15 +4,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aweoftheweek.pdf"
   },
   {
-    "revision": "d43a05141e765a9eeedd",
-    "url": "/css/app.6bb3af35.css"
+    "revision": "7511e49c954c1b6a528a",
+    "url": "/css/app.bc7f9cc2.css"
   },
   {
-    "revision": "c47557b5309be1fe72216c1e692cc1f5",
+    "revision": "c5c2d411f049e80fb0951531d5ab855e",
     "url": "/index.html"
   },
   {
-    "revision": "d43a05141e765a9eeedd",
+    "revision": "7511e49c954c1b6a528a",
     "url": "/js/app.5195db06.js"
   },
   {
@@ -56,19 +56,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/powdermage_light.pdf"
   },
   {
-    "revision": "134f84f66a3c596eee938cad7b598c4e",
+    "revision": "5945c55563d46e93dbb54452fde8f922",
     "url": "/template_playbook_dark.pdf"
   },
   {
-    "revision": "674812841693420678af651fee2467e4",
+    "revision": "645d3955f0da6b20be414c77a1de41a4",
     "url": "/template_playbook_light.pdf"
   },
   {
-    "revision": "7e815fbf1bfbcc19a5a8832df21fb32a",
+    "revision": "4f5f685759eb0201eb93f037742501e7",
     "url": "/witch_dark.pdf"
   },
   {
-    "revision": "ee149b67df0e088c575dd757779147b3",
+    "revision": "2bb38a313aba89af2b6d5bc34f09d234",
     "url": "/witch_light.pdf"
   },
   {
