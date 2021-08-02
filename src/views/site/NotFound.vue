@@ -3,12 +3,14 @@
         <span>Yo, what are you here for?</span>
         <br>
         <span>Go <router-link :to="{path: '/'}" @click="$emit('routed')">home</router-link>.</span>
-                
     </div>
 </template>
 
 <script>
-const notfound = { name: 'notfound' };
+const notfound = {
+    name: 'notfound',
+    created() { this.$router.push('/404NotFound'); },
+};
 export default notfound;
 </script>
 

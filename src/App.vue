@@ -9,13 +9,18 @@
     <div class="shell__links" v-if="linksShowing">
       <NavDropdown
         @routed="hideNavs"
-        name="Creations"
+        name="Games & Hacks"
         :links="gameLinks"
       ></NavDropdown>
       <div class="shell__links__spacer">|</div>
       <NavDropdown
         name="This Site"
         :links="siteLinks"
+      ></NavDropdown>
+      <div class="shell__links__spacer">|</div>
+      <NavDropdown
+        name="Other"
+        :links="otherLinks"
       ></NavDropdown>
     </div>
   </div>
@@ -40,6 +45,9 @@ export default {
       {to: "/aweoftheweek", text: "AWE of the Week"},
       {to: "/dwplaybooks", text: "DW Playbooks"},
     ],
+    otherLinks: [
+      {to: "https://github.com/rfkeepers", text: "GitHub", external: true},
+    ],
   }; },
   created() {},
   mounted() { window.addEventListener('resize', this.onResize); },
@@ -56,7 +64,19 @@ export default {
     $route: {
       immediate: true,
       handler(to) {
-        document.title = `Innumerable Engines - ${to.name}`;
+        document.title = to.meta.title;
+        Array.from(document.querySelectorAll('[data-vue-router-controlled]'))
+          .map(el => el.parentNode.removeChild(el));
+
+        if(!to.meta.tags) { return; }
+
+        to.meta.tags.map(tag => {
+          const el = document.createElement('meta');
+          Object.keys(tag).forEach(key => el.setAttribute(key, tag[key]));
+          el.setAttribute('data-vue-router-controlled', true);
+          return el;
+        })
+        .forEach(tag => document.head.appendChild(tag));
       },
     },
   },

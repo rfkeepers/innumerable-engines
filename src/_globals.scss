@@ -46,10 +46,6 @@ a {
 }
 
 hr {
-  // margin-block-start: 0;
-  // margin-block-end: 0;
-  // margin-inline-start: -1em;
-  // margin-inline-end: -1em;
   border-color: $color-foreground;
   color: $color-foreground;
   height: 1px;
@@ -57,10 +53,18 @@ hr {
 }
 
 h1 {
-  color: $color-foreground;
+  color: $color-text;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   line-height: 1.25em;
+}
+
+h2 {
+  color: $color-text;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  line-height: 1em;
+  font-weight: normal;
 }
 
 ul {
@@ -132,6 +136,12 @@ li {
       position: absolute;
     }
   }
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
 }
 
 .blurb {

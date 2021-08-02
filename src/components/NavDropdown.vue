@@ -8,10 +8,20 @@
             <li
                 v-for="l in links"
                 :key="l.to"
-                @click="routeTo(l.to)"
+                @click="routeTo(l)"
                 class="navPopover__list__line"
             >
-                <router-link :to="l.to" @click="$emit('routed')">
+                <a
+                    v-if="l.external"
+                    :href="l.to"
+                >
+                    {{ l.text }}
+                </a>
+                <router-link
+                    v-else
+                    :to="l.to"
+                    @click="$emit('routed')"
+                >
                     {{ l.text }}
                 </router-link>
             </li>
@@ -34,6 +44,10 @@ const navDropdown = {
             type: Array,
             description: "Array of objects containing 'to' and 'text', each will create a router-link.",
         },
+        external: {
+            type: Boolean,
+            description: "Flag for whether the link routes internally or to an external site.",
+        },
     },
     data() { return {
         showDropdown: false,
@@ -51,9 +65,10 @@ const navDropdown = {
                 document.addEventListener('click', offclick);
             }
         },
-        routeTo(path) {
+        routeTo(link) {
+            if (link.external) { window.location.href = link.to; }
             this.$emit('routed');
-            this.$router.push(path);
+            this.$router.push(link.to);
         },
     },
     computed: {
