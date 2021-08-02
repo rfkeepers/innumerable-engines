@@ -45,8 +45,8 @@ const dwpbs = {
     },
   },
   computed: {
-    darkPDF() { return `/dwplaybooks/${this.playbookName}_dark.pdf`; },
-    lightPDF() { return `/dwplaybooks/${this.playbookName}_light.pdf`; },
+    darkPDF() { return `/dungeon_world_playbooks/${this.playbookName}_dark.pdf`; },
+    lightPDF() { return `/dungeon_world_playbooks/${this.playbookName}_light.pdf`; },
   },
 };
 export default dwpbs;

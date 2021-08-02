@@ -65,7 +65,7 @@ export default {
       immediate: true,
       handler(to) {
         document.title = to.meta.title;
-        Array.from(document.querySelectorAll('[data-vue-router-controlled]'))
+        Array.from(document.querySelectorAll('[data-vue-app-controlled]'))
           .map(el => el.parentNode.removeChild(el));
 
         if(!to.meta.tags) { return; }
@@ -73,7 +73,7 @@ export default {
         to.meta.tags.map(tag => {
           const el = document.createElement('meta');
           Object.keys(tag).forEach(key => el.setAttribute(key, tag[key]));
-          el.setAttribute('data-vue-router-controlled', true);
+          el.setAttribute('data-vue-app-controlled', true);
           return el;
         })
         .forEach(tag => document.head.appendChild(tag));
