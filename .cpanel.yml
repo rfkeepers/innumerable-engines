@@ -2,4 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/innumera/public_html/
+    - /bin/cp -R dist/assets $DEPLOYPATH
     - /bin/cp -R dist/* $DEPLOYPATH
