@@ -21,9 +21,4 @@ export default aweotw;
 </script>
 
 <style scoped lang="scss">
-.aweotw {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 </style>

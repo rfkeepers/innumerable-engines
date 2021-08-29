@@ -1,18 +1,18 @@
 <template>
 <div class="dwpbs">
     <h1 class="title">Custom Dungeon World Playbooks</h1>
-    <h2 class="subtitle"><a href="/dwplaybooks/witch">The Witch</a></h2>
-    <div class="blurb padBot">Whisper a nightmareish curse against your foe.</div>
-    <h2 class="subtitle"><a href="/dwplaybooks/monk">The Monk</a></h2>
-    <div class="blurb padBot">Find enlightenment through discipline.</div>
-    <h2 class="subtitle"><a href="/dwplaybooks/nightwatch">The Nightwatch</a></h2>
-    <div class="blurb padBot">Protect the streets as a nighttime vigilante.</div>
-    <h2 class="subtitle"><a href="/dwplaybooks/powdermage">The Powdermage</a></h2>
-    <div class="blurb padBot">Every good team needs a demolitions expert.</div>
-    <h2 class="subtitle"><a href="/dwplaybooks/necrogardener">The Necrogardener</a></h2>
-    <div class="blurb padBot">Undead with green thumbs grow rotting gardens.</div>
-    <h2 class="subtitle"><a href="/dwplaybooks/worldsmith">The Worldsmith</a></h2>
-    <div class="blurb">Forge an arsenal with fire, stone, and water.</div>
+    <h2 class="subtitle--to"><a href="/dwplaybooks/witch">The Witch</a></h2>
+    <div class="blurb--for padBot">Whisper a nightmareish curse against your foe.</div>
+    <h2 class="subtitle--to"><a href="/dwplaybooks/monk">The Monk</a></h2>
+    <div class="blurb--for padBot">Find enlightenment through discipline.</div>
+    <h2 class="subtitle--to"><a href="/dwplaybooks/nightwatch">The Nightwatch</a></h2>
+    <div class="blurb--for padBot">Protect the streets as a nighttime vigilante.</div>
+    <h2 class="subtitle--to"><a href="/dwplaybooks/powdermage">The Powdermage</a></h2>
+    <div class="blurb--for padBot">Every good team needs a demolitions expert.</div>
+    <h2 class="subtitle--to"><a href="/dwplaybooks/necrogardener">The Necrogardener</a></h2>
+    <div class="blurb--for padBot">Undead with green thumbs grow rotting gardens.</div>
+    <h2 class="subtitle--to"><a href="/dwplaybooks/worldsmith">The Worldsmith</a></h2>
+    <div class="blurb--for">Forge an arsenal with fire, stone, and water.</div>
     <br>
     <br>
 
@@ -35,12 +35,6 @@ export default dwpbs;
 </script>
 
 <style scoped lang="scss">
-.dwpbs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .padBot {
   padding-bottom: 16px;
 

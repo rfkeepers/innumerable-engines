@@ -53,9 +53,4 @@ export default dwpbs;
 </script>
 
 <style scoped lang="scss">
-.playbook {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 </style>
