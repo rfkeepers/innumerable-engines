@@ -30,9 +30,6 @@
 </template>
 
 <script>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons'
-
 const navDropdown = {
     name: 'navDropdown',
     props: {
@@ -71,11 +68,6 @@ const navDropdown = {
             this.$router.push(link.to);
         },
     },
-    computed: {
-        caret() { return this.showDropdown ? faCaretRight : faCaretDown; },
-    },
-    watch: {},
-    components: {FontAwesomeIcon},
 };
 
 export default navDropdown;

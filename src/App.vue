@@ -1,30 +1,33 @@
 <template>
 <div class="overlord">
-  <div id="innumerable-engines" class="shell">
-    <div class="shell__title" @click="routeHome">Innumerable Engines</div>
+  <div id="innumerable-engines" class="headerBar">
     <div
-      class="shell__nav-button"
+      class="headerBar__title"
+      @click="routeHome"
+    >Innumerable Engines</div>
+    <div
+      class="headerBar__nav-button"
       @click="linksShowing = !linksShowing"  
     >&#9776;</div>
-    <div class="shell__links" v-if="linksShowing">
+    <div class="headerBar__links" v-if="linksShowing">
       <NavDropdown
         @routed="hideNavs"
         name="Games & Hacks"
         :links="gameLinks"
       ></NavDropdown>
-      <div class="shell__links__spacer">|</div>
+      <div class="headerBar__links__spacer">|</div>
       <NavDropdown
         name="This Site"
         :links="siteLinks"
       ></NavDropdown>
-      <div class="shell__links__spacer">|</div>
+      <div class="headerBar__links__spacer">|</div>
       <NavDropdown
         name="Other"
         :links="otherLinks"
       ></NavDropdown>
     </div>
   </div>
-  <div class="view">
+  <div class="pageBody">
     <router-view></router-view>
   </div>
 </div>
@@ -87,25 +90,19 @@ export default {
 </script>
 
 <style lang="scss">
-.shell {
+.headerBar {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.view {
+.pageBody {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
 <style lang="scss" scoped>
-.overlord {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.shell {
+.headerBar {
   padding: 0.67em 1.5em 1em 1.5em;
   background: $color-background-sink;
   display: grid;
@@ -181,26 +178,6 @@ export default {
     @media screen and (min-width: 900px) {
       align-self: end;
     }
-  }
-}
-
-.view {
-  text-align: justify;
-  margin-top: 1em;
-  flex-grow: 1;
-
-  @media screen and (max-width: 900px) {
-    margin: 1em 2em 0 2em;
-  }
-
-  @media screen and (min-width: 900px) {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-left: 20%;
-    margin-right: 20%;
   }
 }
 </style>
