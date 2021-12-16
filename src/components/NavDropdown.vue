@@ -1,34 +1,41 @@
+<!-- ============================== Template ============================== -->
 <template>
-    <div
-        class="navDropdown"
-        @click="toggleDropdown"
-    >{{ name }}</div>
-    <div v-if="showDropdown" class="navPopover">
-        <ul class="navPopover__list">
-            <li
-                v-for="l in links"
-                :key="l.to"
-                @click="routeTo(l)"
-                class="navPopover__list__line"
+<div
+    class="navDropdown"
+    @click="toggleDropdown"
+>
+    {{ name }}
+</div>
+<div
+    v-if="showDropdown"
+    class="navPopover"
+>
+    <ul class="navPopover__list">
+        <li
+            v-for="l in links"
+            :key="l.to"
+            @click="routeTo(l)"
+            class="navPopover__list__line"
+        >
+            <a
+                v-if="l.external"
+                :href="l.to"
             >
-                <a
-                    v-if="l.external"
-                    :href="l.to"
-                >
-                    {{ l.text }}
-                </a>
-                <router-link
-                    v-else
-                    :to="l.to"
-                    @click="$emit('routed')"
-                >
-                    {{ l.text }}
-                </router-link>
-            </li>
-        </ul>
-    </div>
+                {{ l.text }}
+            </a>
+            <router-link
+                v-else
+                :to="l.to"
+                @click="$emit('routed')"
+            >
+                {{ l.text }}
+            </router-link>
+        </li>
+    </ul>
+</div>
 </template>
 
+<!-- ============================== Script ============================== -->
 <script>
 const navDropdown = {
     name: 'navDropdown',
@@ -39,11 +46,7 @@ const navDropdown = {
         },
         links: {
             type: Array,
-            description: "Array of objects containing 'to' and 'text', each will create a router-link.",
-        },
-        external: {
-            type: Boolean,
-            description: "Flag for whether the link routes internally or to an external site.",
+            description: "Array of objects containing 'to', 'text', and 'external', each will create a router-link.",
         },
     },
     data() { return {
@@ -73,24 +76,31 @@ const navDropdown = {
 export default navDropdown;
 </script>
 
+<!-- ============================== Style ============================== -->
 <style scoped lang="scss">
+
 .navDropdown {
     cursor: pointer;
     text-indent: 1em;
     color: $color-text;
+
     @media screen and (max-width: 900px) {
         margin-top: 8px;
+        
         &:first-child {
             margin-top: 16px;
         }
     }
 }
+
 .navPopover {
     @media screen and (min-width: 900px) {
         position: relative;
     }
+    
     &__list {
         z-index: 100;
+    
         @media screen and (min-width: 900px) {
             position: absolute;
             width: max-content;
@@ -100,6 +110,7 @@ export default navDropdown;
             border: 2px solid $color-foreground-sink;
             border-radius: 0.5em;
             padding: 0;
+        
             &:after {
                 content: "";
                 position: absolute;
@@ -113,6 +124,7 @@ export default navDropdown;
                 z-index: 1;
             }
         }
+
         &__line {
             cursor: pointer;
             padding: 4px 1.25em 4px 1em;
@@ -127,11 +139,13 @@ export default navDropdown;
             }
 
             @media screen and (min-width: 900px) {
+        
                 &:first-child {
                     padding-top: 6px;
                     border-top-left-radius: 0.5em;
                     border-top-right-radius: 0.5em;
                 }
+            
                 &:last-child {
                     padding-bottom: 6px;
                     border-bottom-left-radius: 0.5em;

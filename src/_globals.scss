@@ -23,7 +23,7 @@ body, html {
   background: $color-background;
   color: $color-text;
   margin: 0;
-  line-height: 1.5em;
+  line-height: 1.35em;
   height: 100%;
 }
 
@@ -91,6 +91,7 @@ li {
   // text-align: justify;
   margin-top: 1em;
   flex-grow: 1;
+  overflow-y: auto;
 
   @media screen and (max-width: 900px) {
     margin: 1em 2em 0 2em;

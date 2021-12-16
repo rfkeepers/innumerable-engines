@@ -1,3 +1,4 @@
+<!-- ============================== Template ============================== -->
 <template>
 <div class="overlord">
   <div id="innumerable-engines" class="headerBar">
@@ -33,6 +34,7 @@
 </div>
 </template>
 
+<!-- ============================== Script ============================== -->
 <script>
 import NavDropdown from '@/components/NavDropdown.vue'
 
@@ -89,6 +91,7 @@ export default {
 };
 </script>
 
+<!-- ============================== Style ============================== -->
 <style lang="scss">
 .headerBar {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -101,13 +104,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
+
 <style lang="scss" scoped>
 .headerBar {
+  height: 58px;
   padding: 0.67em 1.5em 1em 1.5em;
   background: $color-background-sink;
   display: grid;
   border-bottom: 2px solid $color-foreground-sunk;
-
   @media screen and (max-width: 900px) {
     grid-template-columns: max-content auto max-content;
     grid-template-rows: auto auto auto;
@@ -116,7 +120,6 @@ export default {
       "subtitle . ."
       "nav nav nav";
   }
-
   @media screen and (min-width: 900px) {
     grid-template-columns: max-content max-content auto max-content;
     grid-template-rows: auto;
@@ -129,7 +132,6 @@ export default {
   &__links {
     grid-area: nav;
     display: flex;
-
     @media screen and (max-width: 900px) {
       flex-direction: column;
       width: 100%;
@@ -138,7 +140,6 @@ export default {
       text-indent: 0.5em;
       align-self: end;
     }
-
     &__spacer {
       text-indent: 16px;
       @media screen and (max-width: 900px) {
