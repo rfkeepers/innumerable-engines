@@ -155,13 +155,13 @@ const routes = [
       ],
     },
   },
-  {
-    path: '/:pathMatch(.*)*',
-    component: notfound,
-    meta: {
-      title: titleMaker('Not Found'),
-    },
-  },
+  // {
+  //   path: '/:pathMatch(.*)*',
+  //   component: notfound,
+  //   meta: {
+  //     title: titleMaker('Not Found'),
+  //   },
+  // },
 ]
 
 const router = createRouter({
