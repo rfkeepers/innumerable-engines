@@ -103,8 +103,8 @@ li {
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 16%;
+    margin-right: 16%;
   }
 }
 
@@ -135,7 +135,7 @@ li {
       top: 50%;
       position: absolute;
     }
-    
+
     &:before {
       width: 0;
       height: 0;
@@ -197,7 +197,7 @@ li {
   &--for {
     @extend .blurb;
     margin-left: 0;
-    
+
     @media screen and (min-width: 900px) {
       &:before {
         content: "╘";
