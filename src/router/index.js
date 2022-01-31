@@ -156,12 +156,6 @@ const routes = [
     },
   },
   {
-    path: '/deathless',
-  },
-  {
-    path: '/sineaters',
-  },
-  {
     path: '/:pathMatch(.*)*',
     component: notfound,
     meta: {
