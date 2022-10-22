@@ -34,6 +34,9 @@ body, html {
 a {
   color: $color-link;
   text-decoration: none;
+  &:link {
+    color: $color-link;
+  }
   &:hover {
     text-decoration: underline;
   }
@@ -98,8 +101,8 @@ li {
   }
 
   @media screen and (min-width: 900px) {
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-left: 12%;
+    margin-right: 12%;
   }
 
   @media screen and (min-width: 1280px) {
@@ -115,7 +118,7 @@ li {
   &:before {
     content: "";
     display: block;
-    width: 90%;
+    width: 95%;
     height: 1px;
     background: $color-foreground;
     left: 10px;
@@ -128,10 +131,10 @@ li {
       content: "";
       display: block;
       width: 128px;
-      width: calc(68vw - 100%);
+      width: calc(72vw - 100%);
       height: 1px;
       background: $color-foreground;
-      right: calc((68vw - 95%) * -1);
+      right: calc((71vw - 95%) * -1);
       top: 50%;
       position: absolute;
     }
@@ -147,7 +150,8 @@ li {
       content: "";
       display: block;
       width: 128px;
-      width: calc(68vw - 100%);
+      width: calc(66vw - 100%);
+      right: calc((66vw - 95%) * -1);
       height: 1px;
       background: $color-foreground;
       top: 50%;
@@ -156,7 +160,7 @@ li {
   }
 
   @media screen and (max-width: 900px) {
-    width: 85%;
+    width: 100%;
     text-align: left;
   }
 }
@@ -178,7 +182,8 @@ li {
 
 .blurb {
   text-align: justify;
-  margin-left: 8%;
+  margin-left: 4%;
+  margin-right: 4%;
 
   @media screen and (max-width: 900px) {
     text-align: left;
@@ -202,7 +207,7 @@ li {
 
 .download {
   font-size: 1.5em;
-  margin-left: 8%;
+  margin-left: 4%;
 }
 
 .changelog {
@@ -213,7 +218,7 @@ li {
   &:after {
     content: "";
     display: block;
-    width: 100%;
+    width: 97%;
     height: 1px;
     background: $color-text;
     position: relative;
@@ -223,7 +228,7 @@ li {
   &:before {
     content: "";
     display: block;
-    width: 100%;
+    width: 97%;
     height: 1px;
     background: $color-text;
     position: relative;

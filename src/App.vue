@@ -126,8 +126,8 @@ export default {
     grid-template-rows: auto;
     grid-template-areas:
       "title subtitle . nav";
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 11%;
+    padding-right: 11%;
   }
 
   &__links {
