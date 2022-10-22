@@ -8,7 +8,7 @@
     >Innumerable Engines</div>
     <div
       class="headerBar__nav-button"
-      @click="linksShowing = !linksShowing"  
+      @click="linksShowing = !linksShowing"
     >&#9776;</div>
     <div class="headerBar__links" v-if="linksShowing">
       <NavDropdown
@@ -113,6 +113,7 @@ export default {
   display: grid;
   border-bottom: 2px solid $color-foreground-sunk;
   @media screen and (max-width: 900px) {
+    padding: 0.67em 0 1em 0;
     grid-template-columns: max-content auto max-content;
     grid-template-rows: auto auto auto;
     grid-template-areas:
@@ -144,7 +145,7 @@ export default {
       text-indent: 16px;
       @media screen and (max-width: 900px) {
         display: none;
-      } 
+      }
     }
   }
 
@@ -158,6 +159,7 @@ export default {
     }
     @media screen and (max-width: 900px) {
       display: visible;
+      margin-right: 8px;
     }
   }
 
@@ -168,6 +170,9 @@ export default {
     cursor: pointer;
     @media screen and (min-width: 900px) {
       align-self: end;
+    }
+    @media screen and (max-width: 900px) {
+      margin-left: 8px;
     }
   }
 

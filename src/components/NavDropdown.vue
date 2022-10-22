@@ -85,22 +85,32 @@ export default navDropdown;
     color: $color-text;
 
     @media screen and (max-width: 900px) {
-        margin-top: 8px;
-        
+        padding-top: 8px;
+        background: $color-background-sink;
+        z-index: 100;
+
         &:first-child {
-            margin-top: 16px;
+            padding-top: 12px;
+        }
+
+        &:last-child {
+            padding-bottom: 12px;
+            border-bottom: 2px solid $color-foreground-sink;
         }
     }
 }
 
 .navPopover {
+    background: $color-background;
+    z-index: 100;
+
     @media screen and (min-width: 900px) {
         position: relative;
     }
-    
+
     &__list {
         z-index: 100;
-    
+
         @media screen and (min-width: 900px) {
             position: absolute;
             width: max-content;
@@ -110,7 +120,7 @@ export default navDropdown;
             border: 2px solid $color-foreground-sink;
             border-radius: 0.5em;
             padding: 0;
-        
+
             &:after {
                 content: "";
                 position: absolute;
@@ -123,6 +133,10 @@ export default navDropdown;
                 width: 0;
                 z-index: 1;
             }
+        }
+
+        @media screen and (max-width: 900px) {
+            background: $color-background-sink;
         }
 
         &__line {
@@ -139,13 +153,12 @@ export default navDropdown;
             }
 
             @media screen and (min-width: 900px) {
-        
                 &:first-child {
                     padding-top: 6px;
                     border-top-left-radius: 0.5em;
                     border-top-right-radius: 0.5em;
                 }
-            
+
                 &:last-child {
                     padding-bottom: 6px;
                     border-bottom-left-radius: 0.5em;

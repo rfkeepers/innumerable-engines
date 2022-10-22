@@ -47,10 +47,10 @@ a {
 }
 
 hr {
-  border-color: $color-foreground;
+  border-color: $color-text;
   color: $color-foreground;
   height: 1px;
-  width: 50%;
+  width: 100%;
 }
 
 h1 {
@@ -94,7 +94,7 @@ li {
   overflow-y: auto;
 
   @media screen and (max-width: 900px) {
-    margin: 1em 2em 0 2em;
+    margin: 1em 0em 0 1em;
   }
 
   @media screen and (min-width: 900px) {
@@ -147,10 +147,9 @@ li {
       content: "";
       display: block;
       width: 128px;
-      width: calc(60vw - 100%);
+      width: calc(68vw - 100%);
       height: 1px;
       background: $color-foreground;
-      right: calc((60vw - 95%) * -1);
       top: 50%;
       position: absolute;
     }
@@ -168,14 +167,6 @@ li {
 
   &--to {
     @extend .subtitle;
-    @media screen and (min-width: 900px) {
-      &:after {
-        content: "╕";
-        font-size: 1em;
-        margin-left: 16px;
-        color: $color-foreground;
-      }
-    }
   }
 }
 
@@ -200,7 +191,7 @@ li {
 
     @media screen and (min-width: 900px) {
       &:before {
-        content: "╘";
+        content: "⋋";
         margin-right: 16px;
         font-size: 1.5em;
         color: $color-foreground;
