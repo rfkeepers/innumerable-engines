@@ -6,10 +6,10 @@
     <div class="download"><a href="./aweoftheweek.pdf" target="_blank">Download the PDF</a></div>
     <div class="changelog">
       <h2>Changelog:</h2>
-      <div>2020.12.27:</div>
+      <h4>2020.12.27:</h4>
       <div>Typo fix on the Psychic playbook, referring to the Director when it shouldn't.</div>
       <br>
-      <div>2020.12.05:</div>
+      <h4>2020.12.05:</h4>
       <div>Beta Release</div>
     </div>
 </div>
