@@ -26,7 +26,7 @@
     <slot name="changelog"></slot>
   </div>
   <br v-if="showChangelog">
-  <hr>
+  <hr v-if="!showChangelog">
   <br>
 </div>
 </template>
@@ -37,16 +37,21 @@ const dwpbs = {
   props: {
     playbookName: String,
     showChangelog: Boolean,
+    playbookVersion: String,
   },
   methods: {
     routeTo() {
       this.$emit('routed');
       this.$router.push('/dwplaybooks');
     },
+    pdfURL(name, variant, version) {
+      return `/dungeon_world_playbooks/${name}_${variant}${version}.pdf`;
+    },
   },
   computed: {
-    darkPDF() { return `/dungeon_world_playbooks/${this.playbookName}_dark.pdf`; },
-    lightPDF() { return `/dungeon_world_playbooks/${this.playbookName}_light.pdf`; },
+    playbookVersionSuffix() { return this.playbookVersion ? "_"+this.playbookVersion : ""; },
+    darkPDF() { return this.pdfURL(this.playbookName, "dark", this.playbookVersionSuffix); },
+    lightPDF() { return this.pdfURL(this.playbookName, "light", this.playbookVersionSuffix); },
   },
 };
 export default dwpbs;
