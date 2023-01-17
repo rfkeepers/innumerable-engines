@@ -1,7 +1,8 @@
 <template>
 <PlaybookPage
     playbookName="necrogardener"
-    :showChangelog="false"
+    playbookVersion="v1"
+    :showChangelog="true"
 >
     <template v-slot:title>The Necrogardener</template>
     <template v-slot:blurb>
@@ -11,6 +12,12 @@
         <br>
         <div>
             Why raise the undead when you can grow your own from seed?  The Necrogardener is an atypical necromancer, far more interested in the world's flora than its fauna.  With a bit of ritual preparation their black thumb can ripen all kinds of abominations.  If the party can abide such a grotesque palate, they might even get some free produce out of the deal.
+        </div>
+    </template>
+    <template v-slot:changelog>
+        <h4>2023.01.16: v1</h4>
+        <div>
+            Some text updates for language and clarity.  Added the Nature Is Metal advanced move. Added CC0 license.
         </div>
     </template>
 </PlaybookPage>

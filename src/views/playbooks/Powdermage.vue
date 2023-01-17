@@ -16,7 +16,7 @@
     </template>
     <template v-slot:changelog>
       <h4>2023.01.15: v1</h4>
-      <div>Revised the grenade sets.  The starting set is now purely destructive, while the inverted set is oriented toward tactical support instead.  Additionally shuffled around a couple moves to make the class feel a little less like a combat-only campaign choice.</div>
+      <div>Revised the grenade sets.  The starting set is now purely destructive, while the inverted set is oriented toward tactical support instead.  Additionally shuffled around a couple moves to make the class feel a little less like a combat-only campaign choice.  Also added the CC0 license.</div>
     </template>
 </PlaybookPage>
 </template>

@@ -25,6 +25,7 @@
                 <li class="ulitem">Warden, Wings, A Blade in the Darkness, and Henchmen were rewritten in large or small ways.</li>
                 <li class="ulitem">The old Caped Crusader move is now Grappling Hook, Enshaden is now Caped Crusader.</li>
                 <li class="ulitem">Instead of starting with all the options, character creation now has the player choose between Caped Crusader and A Slice of Moonlight.</li>
+                <li class="ulitem">Added the CC0 License</li>
             </ul>
         </div>
     </template>
