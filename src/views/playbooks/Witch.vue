@@ -1,7 +1,8 @@
 <template>
 <PlaybookPage
     playbookName="witch"
-    :showChangelog="false"
+    playbookVersion="v1"
+    :showChangelog="true"
 >
     <template v-slot:title>The Witch</template>
     <template v-slot:blurb>
@@ -11,6 +12,12 @@
         <br>
         <div>
             With little capacity for direct engagement, the Witch prefers a less forward approach to solving problems.  Manipulation, knowledge, and mental games are their favorite tactics, with hexes- words to curse creatures into living nightmares- as their specialty.  It's not all nastiness, though.  The Witch is also an adept pharmacologist who will cook up healing salves and tinctures to suit all manner of ailments.
+        </div>
+    </template>
+    <template v-slot:changelog>
+        <h4>2023.01.16: v1</h4>
+        <div>
+            Some text updates for language and clarity.  Added CC0 license.
         </div>
     </template>
 </PlaybookPage>
