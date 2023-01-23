@@ -24,12 +24,12 @@
         <a href="./dwplaybooks/witch">Witch</a>
       </div>
       <div class="download">
-        <a href="./dwplaybooks/monk">Monk</a> - 
+        <a href="./dwplaybooks/monk">Monk</a> -
         <a href="./dwplaybooks/necrogardener">Necrogardener</a>
       </div>
       <div class="download">
         <a href="./dwplaybooks/powdermage">Powdermage</a> -
-        <a href="./dwplaybooks/worldsmith">Worldsmith</a>
+        <a href="./dwplaybooks/embermancer">Embermancer</a>
       </div>
       <br>
     </div>
