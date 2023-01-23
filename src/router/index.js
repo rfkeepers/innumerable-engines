@@ -8,7 +8,7 @@ import monk from '@/views/playbooks/Monk.vue'
 import nightwatch from '@/views/playbooks/Nightwatch.vue'
 import powdermage from '@/views/playbooks/Powdermage.vue'
 import necrogardener from '@/views/playbooks/Necrogardener.vue'
-import worldsmith from '@/views/playbooks/Worldsmith.vue'
+import embermancer from '@/views/playbooks/Embermancer.vue'
 import notfound from '@/views/site/NotFound.vue'
 
 const nameMaker = (...t) => t.join(' - ');
@@ -142,15 +142,15 @@ const routes = [
     },
   },
   {
-    path: '/dwplaybooks/worldsmith',
-    name: nameMaker('The Worldsmith', 'Dungeon World Custom Playbook'),
-    component: worldsmith,
+    path: '/dwplaybooks/embermancer',
+    name: nameMaker('The Embermancer', 'Dungeon World Custom Playbook'),
+    component: embermancer,
     meta: {
-      title: titleMaker('The Worldsmith', 'DW Playbook'),
+      title: titleMaker('The Embermancer', 'DW Playbook'),
       tags: [
         {
           name: 'description',
-          content: 'The Worldsmith puts the raw elements of Dungeon World at your disposal.  Forge and wield weapons, armor, and shields from fire, stone, and water itself.',
+          content: 'A harvester of slowly dying or fading emotions, memories, wishes, and ideas, still capable of being revived.',
         },
       ],
     },
