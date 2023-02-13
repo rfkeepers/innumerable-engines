@@ -9,6 +9,7 @@ import nightwatch from '@/views/playbooks/Nightwatch.vue'
 import powdermage from '@/views/playbooks/Powdermage.vue'
 import necrogardener from '@/views/playbooks/Necrogardener.vue'
 import embermancer from '@/views/playbooks/Embermancer.vue'
+import dancer from '@/views/playbooks/Dancer.vue'
 import notfound from '@/views/site/NotFound.vue'
 
 const nameMaker = (...t) => t.join(' - ');
@@ -151,6 +152,20 @@ const routes = [
         {
           name: 'description',
           content: 'A harvester of slowly dying or fading emotions, memories, wishes, and ideas, still capable of being revived.',
+        },
+      ],
+    },
+  },
+  {
+    path: '/dwplaybooks/dancer',
+    name: nameMaker('The Dancer', 'Dungeon World Custom Playbook'),
+    component: dancer,
+    meta: {
+      title: titleMaker('The Dancer', 'DW Playbook'),
+      tags: [
+        {
+          name: 'description',
+          content: 'An entertainer, renowned by all for their beauty and charm.  Choose your fame: temptress, charmer, worshipper, or warrior.',
         },
       ],
     },

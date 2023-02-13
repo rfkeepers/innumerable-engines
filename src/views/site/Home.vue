@@ -19,17 +19,20 @@
       <h1 class="title clickable" @click="routeTo('/dwplaybooks')">Dungeon World Custom Playbooks</h1>
       <div class="blurb">Six custom playbooks for explosive mischief, nightmareish curses, and growing your own undead buddy.</div>
       <br>
-      <div class="download">
+      <div class="download padbot">
         <a href="./dwplaybooks/nightwatch">Nightwatch</a> -
         <a href="./dwplaybooks/witch">Witch</a>
       </div>
-      <div class="download">
+      <div class="download padbot">
         <a href="./dwplaybooks/monk">Monk</a> -
         <a href="./dwplaybooks/necrogardener">Necrogardener</a>
       </div>
-      <div class="download">
+      <div class="download padbot">
         <a href="./dwplaybooks/powdermage">Powdermage</a> -
         <a href="./dwplaybooks/embermancer">Embermancer</a>
+      </div>
+      <div class="download">
+        <a href="./dwplaybooks/dancer">Dancer</a>
       </div>
       <br>
     </div>
@@ -62,5 +65,9 @@ export default home;
   @media screen and (min-width: 900px) {
     align-items: center;
   }
+}
+
+.padbot {
+  padding-bottom: 8px;
 }
 </style>
