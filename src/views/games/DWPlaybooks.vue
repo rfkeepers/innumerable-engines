@@ -12,7 +12,9 @@
     <h2 class="subtitle--to"><a href="/dwplaybooks/necrogardener">The Necrogardener</a></h2>
     <div class="blurb--for padBot">Undead with green thumbs grow rotting gardens.</div>
     <h2 class="subtitle--to"><a href="/dwplaybooks/embermancer">The Embermancer</a></h2>
-    <div class="blurb--for">Forge an arsenal with fire, stone, and water.</div>
+    <div class="blurb--for padBot">Condense thought and emotion itself into radiating embers.</div>
+    <h2 class="subtitle--to"><a href="/dwplaybooks/dancer">The Dancer</a></h2>
+    <div class="blurb--for padBot">Show people what your body is capable of.</div>
     <br>
     <br>
 

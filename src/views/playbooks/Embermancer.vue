@@ -7,7 +7,7 @@
     <template v-slot:title>The Embermancer</template>
     <template v-slot:blurb>
         <div>
-            Suppose you could steal a thought, which one would you take?  The location of the monarch's tomb!  The true lack of Lark Fanir?  Humbly, perhaps, mere silent joy at seeing the first smile in your direction.  Which, once taken, would you cherish more?  One that could comfort you on sleepless nights?  One to guide your wandering days towards a goal?  Whichever promises a reward at the end of all this?  Or, maybe, you don't have to choose.  They're all available for the taking, if you so choose.
+            Suppose you could steal a thought, which one would you take?  The location of the lost monarch's tomb!  The true lack of Lark Fanir?  Humbly, perhaps, the joy of the child's first smile in your direction.  Which of these, once stolen, would you cherish most?  One that could comfort you on sleepless nights?  One to guide your wandering days towards a goal?  Whichever promises a reward at the end of all this?  Or, maybe, you don't have to choose.  They're all available, if you're willing to take them.
         </div>
         <br>
         <div>
